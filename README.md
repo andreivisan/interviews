@@ -24,7 +24,11 @@ My approach is to first start with the most important Data Structures. I will cr
   - **Circular-Linked List:** LinkedList in which each node points to the next node and the last node points to the first node.
 
 - **Time Complexity:**
+
   - Access: `O(n)`
   - Search: `O(n)`
   - Insert: `O(1)`
   - Remove: `O(1)`
+
+- **Code**:
+  - [Singly-Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/impl/LinkedList.java)
