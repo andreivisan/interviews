@@ -1,5 +1,7 @@
 package datastructures.linkedlist.java.impl;
 
+import java.util.Optional;
+
 public class LinkedList<T> {
 
     private int size = 0;
@@ -55,6 +57,24 @@ public class LinkedList<T> {
             current.next = newNode;
         }
         size++;
+    }
+
+    public Optional<T> peek(int index) {
+        if (isEmpty()) {
+            System.out.println("The list is empty!");
+            return Optional.empty();
+        }
+        if (index > size - 1) {
+            System.out.println("Index greater than list size!");
+            return Optional.empty();
+        }
+        Node<T> current = head;
+        int iterator = 0;
+        while (iterator < index) {
+            current = current.next;
+            iterator++;
+        }
+        return Optional.of(current.data);
     }
 
     public int size() {

@@ -13,9 +13,10 @@ public class LinkedListTest {
         myLinkedList.add(4, 7);
         myLinkedList.add(4, 5);
         myLinkedList.add(5, 6);
+        myLinkedList.add(4, 4);
 
         myLinkedList.print();
-        System.out.println("Size: " + myLinkedList.size());
+        System.out.println(myLinkedList.peek(6));
     }
 
 }
