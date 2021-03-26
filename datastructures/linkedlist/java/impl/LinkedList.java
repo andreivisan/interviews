@@ -5,6 +5,32 @@ public class LinkedList<T> {
     private int size = 0;
     private Node<T> head = null;
 
+    public void add(T element) {
+        addLast(element);
+    }
+
+    public void add(int index, T element) {
+        if (index > size) {
+            System.out.println("Index greater than list size!");
+            return;
+        }
+        if (isEmpty()) {
+            addFirst(element);
+            return;
+        }
+        int iterator = 0;
+        Node<T> current = head;
+        while (iterator < index - 1) {
+            current = current.next;
+            iterator++;
+        }
+        Node<T> newNode = new Node<T>(element);
+        Node<T> nextNode = current.next;
+        current.next = newNode;
+        newNode.next = nextNode;
+        size++;
+    }
+
     public void addFirst(T element) {
         if (isEmpty()) {
             head = new Node<T>(element);
@@ -13,6 +39,20 @@ public class LinkedList<T> {
             Node<T> oldHead = head;
             head = new Node<T>(element);
             head.next = oldHead;
+        }
+        size++;
+    }
+
+    public void addLast(T element) {
+        if (isEmpty()) {
+            addFirst(element);
+        } else {
+            Node<T> current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            Node<T> newNode = new Node<T>(element);
+            current.next = newNode;
         }
         size++;
     }
