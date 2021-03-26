@@ -6,17 +6,19 @@ public class LinkedListTest {
 
     public static void main(String[] args) {
         LinkedList<Integer> myLinkedList = new LinkedList<>();
-        myLinkedList.add(0, 2);
-        myLinkedList.addFirst(1);
-        myLinkedList.addFirst(0);
-        myLinkedList.addLast(3);
-        myLinkedList.add(4, 7);
-        myLinkedList.add(4, 5);
-        myLinkedList.add(5, 6);
-        myLinkedList.add(4, 4);
+        myLinkedList.addFirst(9);
+        myLinkedList.add(1, 1);
+        myLinkedList.add(1, 7);
+        myLinkedList.delete(1);
+        myLinkedList.addFirst(7);
+        myLinkedList.addFirst(4);
+        myLinkedList.delete(1);
+        myLinkedList.add(1, 4);
+        myLinkedList.addFirst(2);
+        myLinkedList.delete(5);
 
         myLinkedList.print();
-        System.out.println(myLinkedList.peek(6));
+        System.out.println(myLinkedList.peek(0));
     }
 
 }

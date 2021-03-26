@@ -16,7 +16,7 @@ public class LinkedList<T> {
             System.out.println("Index greater than list size!");
             return;
         }
-        if (isEmpty()) {
+        if (index == 0) {
             addFirst(element);
             return;
         }
@@ -36,11 +36,10 @@ public class LinkedList<T> {
     public void addFirst(T element) {
         if (isEmpty()) {
             head = new Node<T>(element);
-            head.next = null;
         } else {
-            Node<T> oldHead = head;
-            head = new Node<T>(element);
-            head.next = oldHead;
+            Node<T> newNode = new Node<T>(element);
+            newNode.next = head;
+            head = newNode;
         }
         size++;
     }
@@ -75,6 +74,32 @@ public class LinkedList<T> {
             iterator++;
         }
         return Optional.of(current.data);
+    }
+
+    public void delete(int index) {
+        if (isEmpty()) {
+            System.out.println("The list is empty!");
+            return;
+        }
+        if (index > size - 1) {
+            System.out.println("Index greater than list size!");
+            return;
+        }
+        if (index == 0) {
+            Node<T> current = head;
+            head = current.next;
+            size--;
+            return;
+        }
+        Node<T> current = head;
+        int iterator = 0;
+        while (iterator < index - 1) {
+            current = current.next;
+            iterator++;
+        }
+        Node<T> toDelete = current.next;
+        current.next = toDelete.next;
+        size--;
     }
 
     public int size() {
