@@ -31,5 +31,14 @@ My approach is to first start with the most important Data Structures. I will cr
   - Remove: `O(1)`
 
 - **Code**:
+
   - `Java:`
     - [Singly-Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/impl/LinkedList.java)
+
+- **Algorithms**:
+  - _Two-Pointer Technique_
+    - `Java:`
+      - [Singly-Linked List -> Linked List Cycle 1]()
+      - [Singly-Linked List -> Linked List Cycle 2]()
+      - [Singly-Linked List -> Intersection of Two Linked Lists]()
+      - [Singly-Linked List -> Remove Nth Node From End of List]()
