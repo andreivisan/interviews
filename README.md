@@ -34,6 +34,8 @@ My approach is to first start with the most important Data Structures. I will cr
 
   - `Java:`
     - [Singly-Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/impl/LinkedList.java)
+  - `Python:`
+    - [Singly-Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/linkedlist.py)
 
 - **Algorithms**:
   - _Two-Pointer Technique_
