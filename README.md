@@ -45,7 +45,7 @@ My approach is to first start with the most important Data Structures. I will cr
     For a singly linked list, since we can only traverse the linked list in one direction, the first scenario might not work. However, the second scenario, which is also called slow-pointer and fast-pointer technique, is really useful.
 
     - `Java:`
-      - [Singly-Linked List -> Linked List Cycle 1]()
+      - [Singly-Linked List -> Linked List Cycle 1](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/LinkedListCycle.java)
       - [Singly-Linked List -> Linked List Cycle 2]()
       - [Singly-Linked List -> Intersection of Two Linked Lists]()
       - [Singly-Linked List -> Remove Nth Node From End of List]()
