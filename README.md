@@ -49,7 +49,7 @@ My approach is to first start with the most important Data Structures. I will cr
     - `Java:`
 
       - [Singly-Linked List -> Linked List Cycle 1](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/LinkedListCycle.java)
-      - [Singly-Linked List -> Linked List Cycle 2]()
+      - [Singly-Linked List -> Linked List Cycle 2](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/LinkedListCycleII.java)
 
         _Note_: The idea of the solution of this algorithm is that the distance from the intersection point of the slow pointer and fast pointer to the cycle begin is equal to the distance from the head of the list to the cycle begin.
 
