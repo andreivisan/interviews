@@ -3,16 +3,35 @@ package datastructures.linkedlist.java.algorithms;
 public class LinkedListCycleII {
 
     public static ListNode detectCycle(ListNode head) {
-        ListNode tortoise = head;
-        ListNode hare = head;
+        if (head == null) {
+            return null;
+        }
 
-        // A fast pointer will either loop around a cycle and meet the slow
-        // pointer or reach the `null` at the end of a non-cyclic list.
-        while (hare != null && hare.next != null) {
-            tortoise = tortoise.next;
-            hare = hare.next.next;
-            if (tortoise == hare) {
-                return tortoise;
+        ListNode intersect = findIntersect(head);
+        if (intersect == null) {
+            return null;
+        }
+
+        ListNode pointerHead = head;
+        ListNode pointerIntersect = intersect;
+
+        while (pointerHead != pointerIntersect) {
+            pointerHead = pointerHead.next;
+            pointerIntersect = pointerIntersect.next;
+        }
+
+        return pointerIntersect;
+    }
+
+    private static ListNode findIntersect(ListNode head) {
+        ListNode slowPointer = head;
+        ListNode fastPointer = head;
+
+        while (fastPointer != null && fastPointer.next != null) {
+            slowPointer = slowPointer.next;
+            fastPointer = fastPointer.next.next;
+            if (slowPointer == fastPointer) {
+                return slowPointer;
             }
         }
 
@@ -28,7 +47,7 @@ public class LinkedListCycleII {
         node1.next = node2;
         node2.next = node3;
         node3.next = node4;
-        node4.next = node2;
+        node4.next = node3;
 
         System.out.println(detectCycle(node1).val);
     }
