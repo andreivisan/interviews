@@ -53,7 +53,7 @@ My approach is to first start with the most important Data Structures. I will cr
 
         _Note_: The idea of the solution of this algorithm is that the distance from the intersection point of the slow pointer and fast pointer to the cycle begin is equal to the distance from the head of the list to the cycle begin.
 
-      - [Singly-Linked List -> Intersection of Two Linked Lists]()
+      - [Singly-Linked List -> Intersection of Two Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/LinkedListIntersection.java)
 
         _Note_: The idea of the solution of this algorithm is that in order to optimize the space, we can calculate the length of both lists and set the starting point for the longer list at the same position as the starting point for the shorter one, as the tail is always the same. And to even simplify further the code we iterate through both as long as the pointers are not equal, and when we reach null we switch list heads and like this we achieve above simpler.
 
@@ -66,5 +66,8 @@ My approach is to first start with the most important Data Structures. I will cr
 
         _Note_: The idea of the solution of this algorithm is that the distance from the intersection point of the slow pointer and fast pointer to the cycle begin is equal to the distance from the head of the list to the cycle begin.
 
-      - [Singly-Linked List -> Intersection of Two Linked Lists]()
+      - [Singly-Linked List -> Intersection of Two Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/linked-list-intersection.py)
+
+        _Note_: The idea of the solution of this algorithm is that in order to optimize the space, we can calculate the length of both lists and set the starting point for the longer list at the same position as the starting point for the shorter one, as the tail is always the same. And to even simplify further the code we iterate through both as long as the pointers are not equal, and when we reach null we switch list heads and like this we achieve above simpler.
+
       - [Singly-Linked List -> Remove Nth Node From End of List]()
