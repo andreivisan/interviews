@@ -59,6 +59,8 @@ My approach is to first start with the most important Data Structures. I will cr
 
       - [Singly-Linked List -> Remove Nth Node From End of List]()
 
+        _Note_: There are 2 solutions. The easy one is that we need to remove the node at L-n+1. Where L is the size of the list. For this we need 2 traversals because first we need to determine the length of the list. The second and most optimal solution traverses the list only once. The idea behind this solution is to add a dummy node in front of the head node, then with the first pointer we traverse n+1 steps, then we start advancing both first and second pointer with only one step until the first becomes NULL. At this moment the second pointer points to the element behind the Nth node which needs to be removed. The dummy node is there in case the Nth element from the end is the head of the list. If we don't want to use an extra dummy, after the first node traverses N steps we check the first for null and in case is null then we return head.next .
+
     - `Python:`
 
       - [Singly-Linked List -> Linked List Cycle 1](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/linked-list-cycle.py)
@@ -71,3 +73,5 @@ My approach is to first start with the most important Data Structures. I will cr
         _Note_: The idea of the solution of this algorithm is that in order to optimize the space, we can calculate the length of both lists and set the starting point for the longer list at the same position as the starting point for the shorter one, as the tail is always the same. And to even simplify further the code we iterate through both as long as the pointers are not equal, and when we reach null we switch list heads and like this we achieve above simpler.
 
       - [Singly-Linked List -> Remove Nth Node From End of List]()
+
+        _Note_: There are 2 solutions. The easy one is that we need to remove the node at L-n+1. Where L is the size of the list. For this we need 2 traversals because first we need to determine the length of the list. The second and most optimal solution traverses the list only once. The idea behind this solution is to add a dummy node in front of the head node, then with the first pointer we traverse n+1 steps, then we start advancing both first and second pointer with only one step until the first becomes NULL. At this moment the second pointer points to the element behind the Nth node which needs to be removed. The dummy node is there in case the Nth element from the end is the head of the list. If we don't want to use an extra dummy, after the first node traverses N steps we check the first for null and in case is null then we return head.next .
