@@ -1,12 +1,13 @@
-package datastructures.linkedlist.java.algorithms;
+package datastructures.linkedlist.java.algorithms.twopointer;
 
 class ListNode {
     int val;
     ListNode next;
+
     ListNode(int x) {
         val = x;
         next = null;
-    }   
+    }
 }
 
 public class LinkedListCycle {
@@ -15,7 +16,7 @@ public class LinkedListCycle {
         if (head == null) {
             return false;
         }
-        
+
         ListNode slow = head;
         ListNode fast = head.next;
 
@@ -26,8 +27,8 @@ public class LinkedListCycle {
             slow = slow.next;
             fast = fast.next.next;
         }
-        
-        return true;    
+
+        return true;
     }
 
     public static void main(String[] args) {
@@ -43,5 +44,5 @@ public class LinkedListCycle {
 
         System.out.println(hasCycle(node1));
     }
-    
+
 }

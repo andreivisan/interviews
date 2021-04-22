@@ -48,30 +48,44 @@ My approach is to first start with the most important Data Structures. I will cr
 
     - `Java:`
 
-      - [Singly-Linked List -> Linked List Cycle 1](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/LinkedListCycle.java)
-      - [Singly-Linked List -> Linked List Cycle 2](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/LinkedListCycleII.java)
+      - [Singly-Linked List -> Linked List Cycle 1](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/twopointer/LinkedListCycle.java)
+      - [Singly-Linked List -> Linked List Cycle 2](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/twopointer/LinkedListCycleII.java)
 
         _Note_: The idea of the solution of this algorithm is that the distance from the intersection point of the slow pointer and fast pointer to the cycle begin is equal to the distance from the head of the list to the cycle begin.
 
-      - [Singly-Linked List -> Intersection of Two Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/LinkedListIntersection.java)
+      - [Singly-Linked List -> Intersection of Two Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/twopointer/LinkedListIntersection.java)
 
         _Note_: The idea of the solution of this algorithm is that in order to optimize the space, we can calculate the length of both lists and set the starting point for the longer list at the same position as the starting point for the shorter one, as the tail is always the same. And to even simplify further the code we iterate through both as long as the pointers are not equal, and when we reach null we switch list heads and like this we achieve above simpler.
 
-      - [Singly-Linked List -> Remove Nth Node From End of List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/RemoveNthNodeFromEnd.java)
+      - [Singly-Linked List -> Remove Nth Node From End of List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/twopointer/RemoveNthNodeFromEnd.java)
 
         _Note_: There are 2 solutions. The easy one is that we need to remove the node at L-n+1. Where L is the size of the list. For this we need 2 traversals because first we need to determine the length of the list. The second and most optimal solution traverses the list only once. The idea behind this solution is to add a dummy node in front of the head node, then with the first pointer we traverse n+1 steps, then we start advancing both first and second pointer with only one step until the first becomes NULL. At this moment the second pointer points to the element behind the Nth node which needs to be removed. The dummy node is there in case the Nth element from the end is the head of the list. If we don't want to use an extra dummy, after the first node traverses N steps we check the first for null and in case is null then we return head.next .
 
     - `Python:`
 
-      - [Singly-Linked List -> Linked List Cycle 1](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/linked-list-cycle.py)
-      - [Singly-Linked List -> Linked List Cycle 2](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/linked-list-cycle-ii.py)
+      - [Singly-Linked List -> Linked List Cycle 1](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/twopointer/linked-list-cycle.py)
+      - [Singly-Linked List -> Linked List Cycle 2](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/twopointer/linked-list-cycle-ii.py)
 
         _Note_: The idea of the solution of this algorithm is that the distance from the intersection point of the slow pointer and fast pointer to the cycle begin is equal to the distance from the head of the list to the cycle begin.
 
-      - [Singly-Linked List -> Intersection of Two Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/linked-list-intersection.py)
+      - [Singly-Linked List -> Intersection of Two Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/twopointer/linked-list-intersection.py)
 
         _Note_: The idea of the solution of this algorithm is that in order to optimize the space, we can calculate the length of both lists and set the starting point for the longer list at the same position as the starting point for the shorter one, as the tail is always the same. And to even simplify further the code we iterate through both as long as the pointers are not equal, and when we reach null we switch list heads and like this we achieve above simpler.
 
-      - [Singly-Linked List -> Remove Nth Node From End of List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/linked-list-remove-nth-from-end.py)
+      - [Singly-Linked List -> Remove Nth Node From End of List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/twopointer/linked-list-remove-nth-from-end.py)
 
         _Note_: There are 2 solutions. The easy one is that we need to remove the node at L-n+1. Where L is the size of the list. For this we need 2 traversals because first we need to determine the length of the list. The second and most optimal solution traverses the list only once. The idea behind this solution is to add a dummy node in front of the head node, then with the first pointer we traverse n+1 steps, then we start advancing both first and second pointer with only one step until the first becomes NULL. At this moment the second pointer points to the element behind the Nth node which needs to be removed. The dummy node is there in case the Nth element from the end is the head of the list. If we don't want to use an extra dummy, after the first node traverses N steps we check the first for null and in case is null then we return head.next .
+
+  - _Classic Problems_
+
+    - `Java:`
+
+      - [Reverse Linked List]()
+
+        _Note_: The idea is to keep track of a previous and a next.
+
+    - `Python:`
+
+      - [Reverse Linked List]()
+
+        _Note_: The idea is to keep track of a previous and a next.
