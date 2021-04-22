@@ -80,12 +80,12 @@ My approach is to first start with the most important Data Structures. I will cr
 
     - `Java:`
 
-      - [Reverse Linked List]()
+      - [Reverse Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/classic/ReverseLinkedList.java)
 
         _Note_: The idea is to keep track of a previous and a next.
 
     - `Python:`
 
-      - [Reverse Linked List]()
+      - [Reverse Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/classic/reverse-linked-list.py)
 
         _Note_: The idea is to keep track of a previous and a next.
