@@ -1,5 +1,3 @@
-package datastructures.linkedlist.java.algorithms.twopointer;
-
 class ListNode {
     int val;
     ListNode next;

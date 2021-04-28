@@ -1,5 +1,3 @@
-package datastructures.linkedlist.java.algorithms.twopointer;
-
 public class RemoveNthNodeFromEnd {
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {

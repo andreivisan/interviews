@@ -1,5 +1,3 @@
-package datastructures.linkedlist.java.algorithms.twopointer;
-
 import java.util.HashSet;
 import java.util.Set;
 

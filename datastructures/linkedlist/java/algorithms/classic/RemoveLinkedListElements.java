@@ -1,8 +1,21 @@
-package datastructures.linkedlist.java.algorithms.classic;
+class ListNode2 {
+    int val;
+    ListNode2 next;
+
+    ListNode2(int x) {
+        val = x;
+        next = null;
+    }
+
+    ListNode2(int x, ListNode2 next) {
+        val = x;
+        this.next = next;
+    }
+}
 
 public class RemoveLinkedListElements {
 
-    public static ListNode removeElements(ListNode head, int val) {
+    public static ListNode2 removeElements(ListNode2 head, int val) {
         while (head != null && head.val == val) {
             head = head.next;
         }
@@ -16,8 +29,8 @@ public class RemoveLinkedListElements {
             return head;
         }
 
-        ListNode previous = head;
-        ListNode current = head.next;
+        ListNode2 previous = head;
+        ListNode2 current = head.next;
 
         while (current != null) {
             if (current.val == val) {
@@ -32,8 +45,8 @@ public class RemoveLinkedListElements {
         return head;
     }
 
-    private static void print(ListNode head) {
-        ListNode current = head;
+    private static void print(ListNode2 head) {
+        ListNode2 current = head;
 
         while (current != null) {
             System.out.print(current.val + " ");
@@ -42,10 +55,10 @@ public class RemoveLinkedListElements {
     }
 
     public static void main(String[] args) {
-        ListNode node4 = new ListNode(4, null);
-        ListNode node3 = new ListNode(2, node4);
-        ListNode node2 = new ListNode(2, node3);
-        ListNode node1 = new ListNode(2, node2);
+        ListNode2 node4 = new ListNode2(4, null);
+        ListNode2 node3 = new ListNode2(2, node4);
+        ListNode2 node2 = new ListNode2(2, node3);
+        ListNode2 node1 = new ListNode2(2, node2);
 
         print(node1);
         System.out.println("\n");
