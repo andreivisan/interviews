@@ -93,3 +93,7 @@ My approach is to first start with the most important Data Structures. I will cr
       - [Reverse Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/classic/reverse-linked-list.py)
 
         _Note_: The idea is to keep track of a previous and a next.
+
+      - [Remove Linked List Element](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/classic/remove-linked-list-element.py)
+
+        _Note_: The idea is to keep track of a previous and a next.
