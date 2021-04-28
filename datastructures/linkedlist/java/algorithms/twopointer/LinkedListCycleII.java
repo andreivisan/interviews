@@ -1,5 +1,3 @@
-package datastructures.linkedlist.java.algorithms.twopointer;
-
 public class LinkedListCycleII {
 
     public static ListNode detectCycle(ListNode head) {

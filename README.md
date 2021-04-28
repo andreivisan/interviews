@@ -84,6 +84,10 @@ My approach is to first start with the most important Data Structures. I will cr
 
         _Note_: The idea is to keep track of a previous and a next.
 
+      - [Remove Linked List Element](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/classic/datastructures/linkedlist/java/algorithms/classic/RemoveLinkedListElements.java)
+
+        _Note_: The idea is to keep track of a previous and a next.
+
     - `Python:`
 
       - [Reverse Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/classic/reverse-linked-list.py)
