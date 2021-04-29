@@ -6,6 +6,11 @@ class ListNode {
         val = x;
         next = null;
     }
+
+    ListNode(int x, ListNode next) {
+        val = x;
+        this.next = next;
+    }
 }
 
 public class LinkedListCycle {
