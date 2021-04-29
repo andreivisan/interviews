@@ -88,6 +88,10 @@ My approach is to first start with the most important Data Structures. I will cr
 
         _Note_: The idea is to keep track of a previous and a next.
 
+      - [Odd Even List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/classic/OddEvenList.java)
+
+        _Note_: The idea is create a pointer called `odd` which points to the head, an `evenHead` pointer which points to head.next and an `even` pointer which points to evenHead. By doing that we create a separate list of evens. Iterate throught the list and switch odds and even accordingly and at the end `odd` pointer will point to `evenHead` so that we link the 2 lists together.
+
     - `Python:`
 
       - [Reverse Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/classic/reverse-linked-list.py)
@@ -97,3 +101,7 @@ My approach is to first start with the most important Data Structures. I will cr
       - [Remove Linked List Element](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/classic/remove-linked-list-element.py)
 
         _Note_: The idea is to keep track of a previous and a next.
+
+      - [Odd Even List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/classic/odd-even-list.py)
+
+        _Note_: The idea is create a pointer called `odd` which points to the head, an `evenHead` pointer which points to head.next and an `even` pointer which points to evenHead. By doing that we create a separate list of evens. Iterate throught the list and switch odds and even accordingly and at the end `odd` pointer will point to `evenHead` so that we link the 2 lists together.
