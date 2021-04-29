@@ -1,5 +1,10 @@
 # Coding Interview Preparation Guide
 
+- [Introduction](#introduction)
+- [Approach](#approach)
+- [1. Data Structures](#1-data-structures)
+  - [Linked Lists](#linked-lists)
+
 ## Introduction
 
 Welcome to my guide on how to study and master Data Structures and Algorithms. What I try to achieve with this guide, is an easy organized way to get REALLY good with using Data Structures and Algorithms. There are lots of resources out there and there is a lot of confusion on how to approach this vast topic in order to get comfortable with solving any type of problems at any difficulty level. I will try to categorize the MUST KNOW Data Structures and Algorithms and the steps to learn them in order to create a solid toolbox in such a way that even when you get a problem that you didn't see before, you are able to use the tools you gained to solve it.
