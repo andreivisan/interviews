@@ -1,5 +1,3 @@
-package datastructures.linkedlist.java.impl;
-
 import java.util.Optional;
 
 public class LinkedList<T> {
@@ -131,4 +129,5 @@ public class LinkedList<T> {
             return data.toString();
         }
     }
+
 }

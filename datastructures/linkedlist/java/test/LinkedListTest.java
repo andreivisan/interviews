@@ -1,7 +1,3 @@
-package datastructures.linkedlist.java.test;
-
-import datastructures.linkedlist.java.impl.LinkedList;
-
 public class LinkedListTest {
 
     public static void main(String[] args) {
