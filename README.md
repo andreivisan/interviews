@@ -38,7 +38,13 @@ My approach is to first start with the most important Data Structures. I will cr
 - **Code**:
 
   - `Java:`
+
     - [Singly-Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/impl/LinkedList.java)
+
+    - [Doubly-Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/impl/DoublyLinkedList.java)
+
+      _Note_: One small performance improvement is when an index is given establish if it is before or after mid list `(index + 1 > size - index)` and traverse from head or from tail. This also implies that besides head we need to keep a reference to the tail as well.
+
   - `Python:`
     - [Singly-Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/linkedlist.py)
 
