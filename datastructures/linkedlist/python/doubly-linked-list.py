@@ -37,7 +37,7 @@ class DoublyLinkedList:
 
     def add_at_tail(self, val):
         if not self.head:
-            self.head == Node(val)
+            self.head = Node(val)
         else:
             current = self.head
             while current.next:
