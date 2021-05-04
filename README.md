@@ -129,3 +129,13 @@ My approach is to first start with the most important Data Structures. I will cr
       - [Palindrome Linked List](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/classic/palindrome_linked_list.py)
 
         _Note_: The idea is to use fast and slow pointer to find the middle of the list. Then reverse the second half of the list. Then take 2 pointers one that starts at head and the other that starts at the reversed head and traverse the 2 halves and compare the values.
+
+  - _Exercises_
+
+    - `Java:`
+
+      - [Merge Two Sorted Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/java/algorithms/exercises/MergeTwoSortedLists.java)
+
+    - `Python:`
+
+      - [Merge Two Sorted Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/python/algorithms/exercises/merge-two-sorted-lists.py)
