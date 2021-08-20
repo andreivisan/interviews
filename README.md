@@ -16,4 +16,4 @@ My approach is to first start with the most important Data Structures. I will cr
 
 ## 1. Data Structures
 
-1.1 [Linked Lists] (https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/README.md)
+1.1 [Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist/README.md)
