@@ -3,7 +3,6 @@
 - [Introduction](#introduction)
 - [Approach](#approach)
 - [1. Data Structures](#1-data-structures)
-  - [Linked Lists](#linked-lists)
 
 ## Introduction
 
