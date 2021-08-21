@@ -23,3 +23,9 @@
   - Remove: `O(n)`
 
         Exception when remove a value at the end: `O(1)`
+
+- **Code**:
+
+  - `Java:`
+
+    - [Array Operations](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/java/impl/Operations.java)
