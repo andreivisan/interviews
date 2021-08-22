@@ -12,6 +12,8 @@
 
     2. Some operating systems might allocate different than double the amount of memory needed. But for the sake of simplicity we consider double the memory.
 
+  **Best to use:** Array allows for efficient _reading_ of elements from any position in the sequence during iteration. A drawback is that _writing_ time is linear. So it is best to use when you have a lot of reading and not a lot of writing of data.
+
 - **Time Complexity:**
 
   - Access: `O(1)`
