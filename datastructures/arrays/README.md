@@ -29,3 +29,7 @@
   - `Java:`
 
     - [Array Operations](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/java/impl/Operations.java)
+
+  - `Python:`
+
+    - [Array Operations](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/python/operations.py)
