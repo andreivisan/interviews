@@ -35,3 +35,15 @@
   - `Python:`
 
     - [Array Operations](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/python/operations.py)
+
+- **Algorithms**:
+
+  - `Java:`
+
+    - [Duplicate Zeros](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/java/algorithms/DuplicateZeros.java)
+
+      _Note_:
+
+  - `Python:`
+
+    - [Duplicate Zeros]()
