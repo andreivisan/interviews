@@ -42,8 +42,10 @@
 
     - [Duplicate Zeros](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/java/algorithms/DuplicateZeros.java)
 
-      _Note_:
+      _Note_: The idea behind the algorithm is to first count the number of zeros. After that go through the array in reverse order and we insert at the index + the number of zeros as long as index + number of zeros is less than the original array's length. If the value at current index is zero, we decrease the number of zeros as we already encountered and dealt with one, and insert again just like before.
 
   - `Python:`
 
-    - [Duplicate Zeros]()
+    - [Duplicate Zeros](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/python/algorithms/duplicate_zeros.py)
+
+      _Note_: The idea behind the algorithm is to first count the number of zeros. After that go through the array in reverse order and we insert at the index + the number of zeros as long as index + number of zeros is less than the original array's length. If the value at current index is zero, we decrease the number of zeros as we already encountered and dealt with one, and insert again just like before.
