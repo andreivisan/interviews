@@ -44,8 +44,16 @@
 
       _Note_: The idea behind the algorithm is to first count the number of zeros. After that go through the array in reverse order and we insert at the index + the number of zeros as long as index + number of zeros is less than the original array's length. If the value at current index is zero, we decrease the number of zeros as we already encountered and dealt with one, and insert again just like before.
 
+    - [Merge Sorted Array](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/java/algorithms/MergeSortedArrays.java)
+
+      _Note_: The idea behind the algorithm is to create 3 pointers and start iterating from the end. First pointer will be initialized at `m + n - 1`, second to `m - 1` and third to `n - 1`. Then if third pointer is less than zero we break because it means we used all the elements from second array and the remaining elements in the first array are clearly already sorted so, we can stop. Then we compare the values and start adding to the first array.
+
   - `Python:`
 
     - [Duplicate Zeros](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/python/algorithms/duplicate_zeros.py)
 
       _Note_: The idea behind the algorithm is to first count the number of zeros. After that go through the array in reverse order and we insert at the index + the number of zeros as long as index + number of zeros is less than the original array's length. If the value at current index is zero, we decrease the number of zeros as we already encountered and dealt with one, and insert again just like before.
+
+    - [Merge Sorted Array](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/python/algorithms/merge_sorted_array.py)
+
+      _Note_: The idea behind the algorithm is to create 3 pointers and start iterating from the end. First pointer will be initialized at `m + n - 1`, second to `m - 1` and third to `n - 1`. Then if third pointer is less than zero we break because it means we used all the elements from second array and the remaining elements in the first array are clearly already sorted so, we can stop. Then we compare the values and start adding to the first array.
