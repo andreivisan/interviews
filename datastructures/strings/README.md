@@ -40,16 +40,8 @@
 
         _Note_: Two Pointer Technique Scenario 1
 
-      - [Two Sum II](https://github.com/andreivisan/interviews/blob/master/datastructures/strings/java/algorithms/TwoSum2.java)
-
-        _Note_: Two Pointer Technique Scenario 1
-
     - `Python:`
 
       - [Reverse String](https://github.com/andreivisan/interviews/blob/master/datastructures/strings/python/algorithms/reverse_string.py)
-
-        _Note_: Two Pointer Technique Scenario 1
-
-      - [Two Sum II](https://github.com/andreivisan/interviews/blob/master/datastructures/strings/python/algorithms/two_sum_2.py)
 
         _Note_: Two Pointer Technique Scenario 1

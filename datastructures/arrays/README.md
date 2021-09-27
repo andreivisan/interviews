@@ -48,6 +48,10 @@
 
       _Note_: The idea behind the algorithm is to create 3 pointers and start iterating from the end. First pointer will be initialized at `m + n - 1`, second to `m - 1` and third to `n - 1`. Then if third pointer is less than zero we break because it means we used all the elements from second array and the remaining elements in the first array are clearly already sorted so, we can stop. Then we compare the values and start adding to the first array.
 
+    - [Two Sum II](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/java/algorithms/TwoSum2.java)
+
+      _Note_: Two Pointer Technique Scenario 1 (See Strings)
+
   - `Python:`
 
     - [Duplicate Zeros](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/python/algorithms/duplicate_zeros.py)
@@ -57,3 +61,7 @@
     - [Merge Sorted Array](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/python/algorithms/merge_sorted_array.py)
 
       _Note_: The idea behind the algorithm is to create 3 pointers and start iterating from the end. First pointer will be initialized at `m + n - 1`, second to `m - 1` and third to `n - 1`. Then if third pointer is less than zero we break because it means we used all the elements from second array and the remaining elements in the first array are clearly already sorted so, we can stop. Then we compare the values and start adding to the first array.
+
+    - [Two Sum II](https://github.com/andreivisan/interviews/blob/master/datastructures/arrays/python/algorithms/two_sum_2.py)
+
+      _Note_: Two Pointer Technique Scenario 1
