@@ -19,4 +19,6 @@ My approach is to first start with the most important Data Structures. I will cr
 
 1.2 [Strings](https://github.com/andreivisan/interviews/blob/master/datastructures/strings)
 
-1.3 [Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist)
+1.3 [Stacks](https://github.com/andreivisan/interviews/blob/master/datastructures/stacks)
+
+1.4 [Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist)
