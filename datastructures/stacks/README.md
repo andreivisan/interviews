@@ -36,8 +36,16 @@
 
       _Note_: The idea behind the algorithm is to use 2 stacks, one that holds the main data and one that holds the minimums. Once we find a new minimum we add it to both stacks.
 
+    - [Valid Parentheses](https://github.com/andreivisan/interviews/blob/master/datastructures/stacks/java/algorithms/ValidParentheses.java)
+
+      _Note_: The idea behind the algorithm is to use a map to hold the 3 pairs of parentheses. Iterate through the String and if the top the stack is an open parentheses and the current element in the string is it's closing pair then we pop from the stack. Otherwise we push the element into the stack. We return True if the stack is empty and False otherwise.
+
   - `Python:`
 
     - [Min Stack](https://github.com/andreivisan/interviews/blob/master/datastructures/stacks/python/algorithms/min_stack.py)
 
       _Note_: The idea behind the algorithm is to use 2 stacks, one that holds the main data and one that holds the minimums. Once we find a new minimum we add it to both stacks.
+
+    - [Valid Parentheses](https://github.com/andreivisan/interviews/blob/master/datastructures/stacks/python/algorithms/valid_parentheses.py)
+
+      _Note_: The idea behind the algorithm is to use a map to hold the 3 pairs of parentheses. Iterate through the String and if the top the stack is an open parentheses and the current element in the string is it's closing pair then we pop from the stack. Otherwise we push the element into the stack. We return True if the stack is empty and False otherwise.

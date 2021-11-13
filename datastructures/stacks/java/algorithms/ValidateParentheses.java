@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class ValidateParantheses {
+public class ValidateParentheses {
 
     public static boolean isValid(String s) {
         if (s.length() < 2) {
