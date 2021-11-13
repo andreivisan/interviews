@@ -18,3 +18,26 @@ class MinStack:
 
     def getMin(self) -> int:
         return self.min_stack[-1]
+
+    def print_stack(self):
+        self.stack.reverse()
+        print(*self.stack)
+
+
+def main():
+    min_stack = MinStack()
+
+    min_stack.push(1)
+    min_stack.push(2)
+    min_stack.push(3)
+    min_stack.push(4)
+
+    print("==== MY STACK ====")
+    min_stack.print_stack()
+
+    print("==== MIN VALUE IN THE STACK ====")
+    print(min_stack.getMin())
+
+
+if __name__ == "__main__":
+    main()
