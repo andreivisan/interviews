@@ -21,4 +21,6 @@ My approach is to first start with the most important Data Structures. I will cr
 
 1.3 [Stacks](https://github.com/andreivisan/interviews/blob/master/datastructures/stacks)
 
-1.4 [Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist)
+1.4 [Stacks](https://github.com/andreivisan/interviews/blob/master/datastructures/queues)
+
+1.5 [Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist)
