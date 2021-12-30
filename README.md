@@ -3,6 +3,7 @@
 - [Introduction](#introduction)
 - [Approach](#approach)
 - [1. Data Structures](#1-data-structures)
+- [2. Algorithms](#2-algorithms)
 
 ## Introduction
 
@@ -24,3 +25,7 @@ My approach is to first start with the most important Data Structures. I will cr
 1.4 [Queues](https://github.com/andreivisan/interviews/blob/master/datastructures/queues)
 
 1.5 [Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist)
+
+## 2. Algorithms
+
+2.1 [Recursion](https://github.com/andreivisan/interviews/blob/master/algorithms/recursion)
