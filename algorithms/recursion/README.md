@@ -43,8 +43,16 @@
 
       _Note_: Recursion wise, the idea is to understand that the current result depends on the previous list, which is also the return type of the recursive function. Thus, we store the previous return in a variable by calling our function recursively.
 
+    - [Switch Nodes in Pairs](https://github.com/andreivisan/interviews/blob/master/algorithms/recursion/java/SwapNodesInPairs.java)
+
+      _Note_: Implement the 7 steps and understand the relationship between the data structure we have to work with and the returned data of the method.
+
   - `Python:`
 
     - [Pascal Triangle 2](https://github.com/andreivisan/interviews/blob/master/algorithms/recursion/python/pascal_triangle_2.py)
 
       _Note_: Recursion wise, the idea is to understand that the current result depends on the previous list, which is also the return type of the recursive function. Thus, we store the previous return in a variable by calling our function recursively.
+
+    - [Switch Nodes in Pairs](https://github.com/andreivisan/interviews/blob/master/algorithms/recursion/python/swap_nodes_in_pairs.py)
+
+      _Note_: Implement the 7 steps and understand the relationship between the data structure we have to work with and the returned data of the method.
