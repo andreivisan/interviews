@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class PLHashMap<K, V> {
@@ -6,12 +7,10 @@ public class PLHashMap<K, V> {
     private static class Entry<K, V> {
         final K key;
         V value;
-        Entry<K, V> next;
 
-        public Entry(K key, V value, Entry<K, V> next) {
+        public Entry(K key, V value) {
             this.key = key;
             this.value = value;
-            this.next = next;
         }
 
         public K getKey() {
@@ -20,10 +19,6 @@ public class PLHashMap<K, V> {
 
         public V getValue() {
             return value;
-        }
-
-        public Entry<K, V> getNext() {
-            return next;
         }
 
         @Override
@@ -45,66 +40,69 @@ public class PLHashMap<K, V> {
         }
     }
 
-    private List<Entry<K, V>> buckets;
-    private int size;
+    private static class Bucket<K, V> {
+        LinkedList<Entry<K, V>> bucket;
 
-    public PLHashMap() {
-        this.buckets = new ArrayList<>();
-        this.size = 0;
-    }
-    
-    public boolean put(K key, V value) {
-        Entry<K, V> entry = new Entry<>(key, value, null);
-        int bucket = getHash(key) % getBucketSize();
+        public Bucket() {
+            bucket = new LinkedList<Entry<K, V>>();
+        }
 
-        Entry<K, V> existing = buckets.get(bucket);
-        if (existing == null) {
-            buckets.add(bucket, entry);
-            size++;
-        } else {
-            while (existing.next != null) {
-                if (existing.key.equals(key)) {
-                    existing.value = value;
-                    return true;
-                }
-                existing = existing.next;
+        public V get(K key) {
+            for (Entry<K, V> entry : bucket) {
+               if(entry.key.equals(key)) {
+                   return entry.value;
+               } 
+            }
+            return null;
+        }
+
+        public void update(K key, V value) {
+            boolean found = false;
+            for (Entry<K, V> entry : bucket) {
+                if(entry.key.equals(key)) {
+                    entry.value = value;
+                    found = true;
+                } 
+            }
+            if (!found) {
+                this.bucket.add(new Entry<K, V>(key, value));
+            } 
+        }
+
+        public void remove(K key) {
+            for (Entry<K, V> entry : bucket) {
+                if(entry.key.equals(key)) {
+                    this.bucket.remove(entry);
+                    break;
+                } 
             }
         }
+    }
 
-        if(existing.key.equals(key)) {
-            existing.value = value;
-        } else {
-            existing.next = entry;
-            size++;
+    private int keySpace;
+    private List<Bucket<K, V>> hashTable;
+
+    public PLHashMap() {
+        this.keySpace = 2069;
+        this.hashTable = new ArrayList<>();
+        for (int i = 0; i < this.keySpace; i++) {
+            this.hashTable.add(new Bucket<>());
         }
+    }
 
-        return true;
+    public void put(K key, V value) {
+        int hashKey = key.hashCode() % this.keySpace;
+        this.hashTable.get(hashKey).update(key, value);
     }
 
     public V get(K key) {
-        int index = getHash(key) % getBucketSize();
-        Entry<K, V> bucket = buckets.get(index);
-
-        while(bucket != null) {
-            if (key == bucket.key) {
-                return bucket.value;
-            }
-            bucket = bucket.next;
-        }
-
-        return null;
+        int hashKey = key.hashCode() % this.keySpace;
+        return this.hashTable.get(hashKey).get(key);
     }
 
-    private int getHash(K key) {
-        return key == null ? 0 : Math.abs(key.hashCode());
-    }
-
-    private int getBucketSize() {
-        return 16;
-    }
-
-    private int size() {
-        return size;
+    public void remove(K key) {
+        int hashKey = key.hashCode() % this.keySpace;
+        this.hashTable.get(hashKey).remove(key);
     }
     
     public static void main(String[] args) {
@@ -112,9 +110,8 @@ public class PLHashMap<K, V> {
 
         plHashMap.put("0", "abc");
         plHashMap.put("1", "xyz");
-        plHashMap.put("2", "abc");
+        plHashMap.put("test", "bla");
 
-        System.out.println("My map size: " + plHashMap.size());
-        System.out.println("Value at 1: " + plHashMap.get("1"));
+        System.out.println("Value at test: " + plHashMap.get("test"));
     }
 }
