@@ -28,6 +28,8 @@ My approach is to first start with the most important Data Structures. I will cr
 
 1.6 [Hash Tables](https://github.com/andreivisan/interviews/blob/master/datastructures/hashtables)
 
+1.7 [Binary Trees](https://github.com/andreivisan/interviews/blob/master/datastructures/binarytrees)
+
 ## 2. Algorithms
 
 2.1 [Recursion](https://github.com/andreivisan/interviews/blob/master/algorithms/recursion)
