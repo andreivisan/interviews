@@ -26,6 +26,8 @@ My approach is to first start with the most important Data Structures. I will cr
 
 1.5 [Linked Lists](https://github.com/andreivisan/interviews/blob/master/datastructures/linkedlist)
 
+1.6 [Hash Tables](https://github.com/andreivisan/interviews/blob/master/datastructures/hashtables)
+
 ## 2. Algorithms
 
 2.1 [Recursion](https://github.com/andreivisan/interviews/blob/master/algorithms/recursion)
