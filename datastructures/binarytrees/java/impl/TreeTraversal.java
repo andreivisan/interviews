@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 public class TreeTraversal {
@@ -60,6 +62,41 @@ public class TreeTraversal {
         }
     }
 
+    public static List<Integer> postOrderIterative(TreeNode root) {
+        List<Integer> values = new ArrayList<>();
+        if (root == null) {
+            return values;
+        }
+
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+            TreeNode current = stack.pop();
+            values.add(0, current.val);
+
+            if (current.left != null) {
+                stack.push(current.left);
+            }
+
+            if (current.right != null) {
+                stack.push(current.right);
+            }
+        }
+
+        return values;
+    }
+
+    public static void postOrderRecursive(TreeNode root) {
+        if(root == null) {
+            return;
+        }
+            
+        postOrderRecursive(root.left);
+        postOrderRecursive(root.right);
+        System.out.printf("%d ", root.val);
+    }
+
     public static TreeNode createBinaryTree() {
         TreeNode rootNode = new TreeNode(40);
         TreeNode node20 = new TreeNode(20);
@@ -95,6 +132,15 @@ public class TreeTraversal {
         inOrderIterative(binaryTree);
         System.out.println("\n**** Recursive ****");
         inOrderRecursive(binaryTree);
+
+        System.out.println("\n\n");
+
+        System.out.println("**** POST-ORDER TRAVERSAL ****");
+        postOrderIterative(binaryTree).stream().forEach(value -> {
+            System.out.printf("%d ", value);
+        });
+        System.out.println("\n**** Recursive ****");
+        postOrderRecursive(binaryTree);
     }
 
 }
