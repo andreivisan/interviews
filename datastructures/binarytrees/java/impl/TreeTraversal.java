@@ -41,14 +41,14 @@ public class TreeTraversal {
         TreeNode current = root;
 
         while (!stack.isEmpty() || current != null) {
-            if (current != null) {
+            while (current != null) {
                 stack.push(current);
                 current = current.left;
-            } else {
-                TreeNode tNode = stack.pop();
-                System.out.printf("%d ", root.val);
-                current = tNode.right;
             }
+
+            current = stack.pop();
+            System.out.printf("%d ", current.val);
+            current = current.right;
         }
     }
 
@@ -56,7 +56,7 @@ public class TreeTraversal {
         if (root != null) {
             inOrderRecursive(root.left);
             System.out.printf("%d ", root.val);
-            inOrderRecursive(root.right)
+            inOrderRecursive(root.right);
         }
     }
 
@@ -89,7 +89,7 @@ public class TreeTraversal {
         System.out.println("\n**** Recursive ****");
         preOrderRecursive(binaryTree);
 
-        System.out.println("\n\n")
+        System.out.println("\n\n");
 
         System.out.println("**** IN-ORDER TRAVERSAL ****");
         inOrderIterative(binaryTree);
