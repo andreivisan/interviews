@@ -1,3 +1,6 @@
+from typing import List
+
+
 class TreeNode:
     def __init__(self, val, left, right) -> None:
         self.val = val
@@ -31,6 +34,61 @@ class TreeTraversal:
         print(f'{root.val}', end =", ")
         self.pre_order_recursive(root.left)
         self.pre_order_recursive(root.right)
+        
+
+    def in_order_iterative(self, root:TreeNode) -> None:
+        if root is None:
+            return
+        
+        stack = []
+        current = root
+        
+        while stack or current:
+            while current:
+                stack.append(current)
+                current = current.left
+                
+            current = stack.pop()
+            print(f'{current.val}', end =", ")
+            current = current.right
+            
+    
+    def in_order_recursive(self, root: TreeNode) -> None:
+        if root is None:
+            return
+        
+        self.in_order_recursive(root.left)
+        print(f'{root.val}', end =", ")
+        self.in_order_recursive(root.right)
+    
+    
+    def post_order_iterative(self, root: TreeNode) -> List[int]:
+        values: List[int] = []
+        if not root:
+            return values    
+
+        stack = []
+        stack.append(root)
+        
+        while stack:
+            current = stack.pop()
+            values.insert(0, current.val)
+            
+            if current.left:
+                stack.append(current.left)
+                
+            if current.right:
+                stack.append(current.right)
+            
+        return values
+    
+    def post_order_recursive(self, root: TreeNode) -> None:
+        if root is None:
+            return
+        
+        self.post_order_recursive(root.left)
+        self.post_order_recursive(root.right)
+        print(f'{root.val}', end =", ")
                 
                 
 def main():
@@ -48,6 +106,18 @@ def main():
     tree_traversal.pre_order_iterative(rootNode)
     print('**** RECURSIVE ****')
     tree_traversal.pre_order_recursive(rootNode)
+    
+    print('\n\n')
+    print('**** IN-ORDER TRAVERSAL ****')
+    tree_traversal.in_order_iterative(rootNode)
+    print('**** RECURSIVE ****')
+    tree_traversal.in_order_recursive(rootNode)
+    
+    print('\n\n')
+    print('**** POST-ORDER TRAVERSAL ****')
+    print(tree_traversal.post_order_iterative(rootNode))
+    print('**** RECURSIVE ****')
+    tree_traversal.post_order_recursive(rootNode)
     
     
 if __name__ == '__main__':
