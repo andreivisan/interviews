@@ -36,4 +36,6 @@
 
   - `Python:`
 
+    - [Tree Traversal](https://github.com/andreivisan/interviews/blob/master/datastructures/binarytrees/python/tree_traversal.py)
+
 
